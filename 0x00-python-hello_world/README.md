@@ -4,3 +4,8 @@
 3-print_number.py prints the integer stored in the variable number
 4-print_float.py
 5-print_string.py
+6-concat.py
+7-edges.py
+8-concat_edges.py
+9-easter_egg.py
+10-check_cycle.c
