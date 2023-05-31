@@ -79,7 +79,20 @@ class Square:
         if self.size == 0:
             print()
         else:
-            for _ in range(self.__position[1]):
+            i = 0
+            pos1, pos2 = self.__position
+            for new_line in range(pos2):
                 print()
-            for _ in range(self.__size):
-                print(" " * self.__position[0] + "#" * self.size)
+            while i < self.__size:
+
+                j = 0
+                while j < pos1:
+                    print(" ", end='')  # replace position with space
+                    j += 1
+
+                num = 0
+                while num < self.__size:
+                    print("{}".format("#"), end='')
+                    num += 1
+                print()
+                i += 1
