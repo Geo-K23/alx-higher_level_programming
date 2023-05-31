@@ -13,8 +13,8 @@ class Square:
             size (int, optional): Size of the square. Defaults to 0.
             position:  position of square
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -81,7 +81,20 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            for _ in range(self.__position[1]):
+            k = 0
+            pos1, pos2 = self.__position
+            for new_line in range(pos2):
                 print()
-            for _ in range(self.__size):
-                print(" " * self.__position[0] + "#" * self.__size)
+            while k < self.__size:
+
+                j = 0
+                while j < pos1:
+                    print(" ", end='')
+                    j += 1
+
+                num = 0
+                while num < self.__size:
+                    print("{}".format("#"), end='')
+                    num += 1
+                print()
+                k += 1
