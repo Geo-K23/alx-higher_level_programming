@@ -4,8 +4,8 @@ if (isNaN(size)) {
   console.log('Missing size');
 } else {
   for (let j = 0; j < size; j++) {
-    let length = '';
-    for (let k = 0; k < size; k++) length += 'x';
-    console.log(length);
+    let row = '';
+    for (let k = 0; k < size; k++) row += 'x';
+    console.log(row);
   }
 }
